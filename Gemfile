@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.5', '>= 6.0.5.1'
 
 gem 'puma', '~> 4.1'
 
-gem'boostnap', '>= 1.4.2', requiere: false
+gem 'boostnap', '>= 1.4.2', requiere: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
