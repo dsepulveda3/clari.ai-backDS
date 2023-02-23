@@ -15,11 +15,13 @@ default: &default
 
 development:
     <<: *default
-    database: "clari_next"
+    # database: "clari_next"
+    database: db/development.sqlite3
 
 test:
     <<: *default
-    database: clari_test
+    # database: clari_test
+    database: db/test.sqlite3
 
 production:
     <<: *default
