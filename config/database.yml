@@ -27,7 +27,7 @@ production:
     <<: *default
     host: postgres
     database: db/production.sqlite3
-    adapter: 'postresql'
+    adapter: sqlite3
 
 # production:
 #     <<: *default
