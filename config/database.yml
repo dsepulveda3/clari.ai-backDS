@@ -10,13 +10,13 @@ default: &default
 
 development:
     <<: *default
-    database: "clari_next"
+    database: postgres
 
 test:
     <<: *default
-    database: clari_test
+    database: postgres
 
 production:
     <<: *default
     host: postgres
-    database: clari_production
+    database: postgres
