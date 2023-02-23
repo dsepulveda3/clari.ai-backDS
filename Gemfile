@@ -7,6 +7,7 @@ ruby '3.1.3'
 gem 'rails', '~> 6.0.5', '>= 6.0.5.1'
 
 gem 'puma', '~> 4.1'
+gem 'listen', '< 3.2'
 
 #gem 'boostnap', '>= 1.4.2', require: false
 
