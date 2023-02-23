@@ -1,0 +1,35 @@
+# default: &default
+#     host: localhost
+#     adapter: postgresql
+#     encoding: unicode
+#     username: postgres
+#     password: postgres
+#     # username: "clari_next"
+#     # password: "Sepulveda091098"
+#     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+default: &default
+    adapter: sqlite3
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+    timeout: 5000
+
+development:
+    <<: *default
+    # database: "clari_next"
+    database: db/development.sqlite3
+
+test:
+    <<: *default
+    # database: clari_test
+    database: db/test.sqlite3
+
+production:
+    <<: *default
+    host: postgres
+    database: db/production.sqlite3
+    adapter: sqlite3
+
+# production:
+#     <<: *default
+#     host: postgres
+#     database: clari_production
